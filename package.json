@@ -1,0 +1,50 @@
+{
+  "name": "wqcloud",
+  "version": "2.0.2",
+  "description": "ALL QCloud APIs",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "npm run compile",
+    "compile": "babel src --out-dir dist",
+    "prepublish": "npm run compile",
+    "test": "doctoc README.md"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/willin/wqcloud.git"
+  },
+  "keywords": [
+    "api",
+    "qcloud",
+    "sdk",
+    "open",
+    "open-api",
+    "trade",
+    "cvm",
+    "cdb",
+    "cdn",
+    "bm"
+  ],
+  "author": "Willin Wang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/willin/wqcloud/issues"
+  },
+  "homepage": "https://github.com/willin/wqcloud#readme",
+  "devDependencies": {
+    "babel-cli": "*",
+    "babel-eslint": "*",
+    "babel-plugin-transform-runtime": "*",
+    "babel-preset-es2015": "*",
+    "babel-preset-es2015-loose": "*",
+    "babel-preset-stage-1": "*",
+    "eslint": "*",
+    "eslint-config-airbnb": "*",
+    "eslint-plugin-import": "*"
+  },
+  "dependencies": {
+    "babel-runtime": "*",
+    "debug": "*",
+    "request": "*"
+  }
+}
