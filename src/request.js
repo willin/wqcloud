@@ -22,18 +22,18 @@ const escaper = str => encodeURIComponent(str)
   .replace(/\)/g, '%29')
   .replace(/\+/, '%2B');
 
-const getSignature = (params, secret, host, method = 'get') => {
+const getSignature = (params, secret, host, method = 'post') => {
   const canoQuery = Object.keys(params).sort()
     .map(key => `${escaper(key)}=${escaper(params[key])}`)
     .join('&');
   const stringToSign = `${method.toUpperCase()}${host.replace(/https?:\/\//, '')}?${canoQuery}`;
   let signature = crypto.createHmac('sha1', `${secret}`);
   signature = signature.update(stringToSign).digest('base64');
-  return escaper(signature);
+  return method === 'post' ? signature : escaper(signature);
 };
 
 module.exports = (host, params = {}, timeout = 5000) => {
-  let method = 'get';
+  let method = 'post';
   if (params.method) {
     method = params.method;
     delete params.method;

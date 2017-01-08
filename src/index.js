@@ -23,7 +23,7 @@ const lazyLoad = service => (options) => {
 
         let params = Object.assign({}, DEFAULTS, options);
         params = Object.assign({Action: property}, params, opts);
-        params.method = settings.actions[action] || 'get';
+        params.method = settings.actions[action] || 'post';
 
         return request(settings.api, params);
       }
