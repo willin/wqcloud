@@ -19,7 +19,7 @@ const lazyLoad = service => (options) => {
   return new Proxy({}, {
     get: (target, property) =>
       (opts) => {
-        const action = property.toLowerCase();
+        const action = property.replace(property.charAt(0), property.charAt(0).toUpperCase());
 
         let params = Object.assign({}, DEFAULTS, options);
         params = Object.assign({Action: property}, params, opts);
