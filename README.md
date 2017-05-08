@@ -49,8 +49,10 @@ Minimum, Flexible, Scalable.
 
 国际惯例：
 
-```
+```bash
 npm install wqcloud --save
+# Node.js 7.6.0之前的版本请安装 v2.x.x版本
+npm install wqcloud@2.1.4 --save
 ```
 
 公共参数：

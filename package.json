@@ -7,9 +7,6 @@
     "node": ">= 7.6.0"
   },
   "scripts": {
-    "start": "npm run compile",
-    "compile": "babel src --out-dir dist",
-    "prepublish": "npm run compile",
     "test": "doctoc README.md"
   },
   "repository": {
