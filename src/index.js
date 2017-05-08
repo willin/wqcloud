@@ -1,6 +1,6 @@
 import request from './request';
 
-const SDKS = ['bm', 'cdn', 'cdb', 'cvm', 'cbs', 'csec', 'dayu', 'lb', 'monitor', 'scaling', 'sqlserver', 'redis', 'cmem', 'trade', 'tdsql', 'vpc', 'wenzhi', 'yunsou'];
+const SDKS = ['bm', 'cdn', 'cdb', 'cvm', 'cbs','cns' , 'csec', 'dayu', 'lb', 'monitor', 'scaling', 'sqlserver', 'redis', 'cmem', 'trade', 'tdsql', 'vpc', 'wenzhi', 'yunsou'];
 
 const DEFAULTS = {
   SecretId: '',
