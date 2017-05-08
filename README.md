@@ -25,6 +25,7 @@ Minimum, Flexible, Scalable.
   - [私有网络 VPC](#%E7%A7%81%E6%9C%89%E7%BD%91%E7%BB%9C-vpc)
   - [内容分发网络](#%E5%86%85%E5%AE%B9%E5%88%86%E5%8F%91%E7%BD%91%E7%BB%9C)
   - [数据库 CDB](#%E6%95%B0%E6%8D%AE%E5%BA%93-cdb)
+  - [云解析 CNS](#%E4%BA%91%E8%A7%A3%E6%9E%90-cns)
   - [数据库 TDSQL](#%E6%95%B0%E6%8D%AE%E5%BA%93-tdsql)
   - [数据库 SQLSERVER](#%E6%95%B0%E6%8D%AE%E5%BA%93-sqlserver)
   - [弹性缓存 REDIS](#%E5%BC%B9%E6%80%A7%E7%BC%93%E5%AD%98-redis)
@@ -227,6 +228,10 @@ example.DescribeCdnHosts().then((data) => {
 ### 数据库 CDB
 
 API文档参考： <https://www.qcloud.com/document/api/236/1209>
+
+### 云解析 CNS
+
+API文档参考： <https://www.qcloud.com/document/api/239/1749>
 
 ### 数据库 TDSQL
 
