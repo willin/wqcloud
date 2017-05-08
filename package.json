@@ -1,8 +1,11 @@
 {
   "name": "wqcloud",
-  "version": "2.1.3",
+  "version": "3.0.0",
   "description": "ALL QCloud APIs",
-  "main": "dist/index.js",
+  "main": "src/index.js",
+  "engines": {
+    "node": ">= 7.6.0"
+  },
   "scripts": {
     "start": "npm run compile",
     "compile": "babel src --out-dir dist",
@@ -32,18 +35,11 @@
   },
   "homepage": "https://github.com/willin/wqcloud#readme",
   "devDependencies": {
-    "babel-cli": "*",
-    "babel-eslint": "*",
-    "babel-plugin-transform-runtime": "*",
-    "babel-preset-es2015": "*",
-    "babel-preset-es2015-loose": "*",
-    "babel-preset-stage-1": "*",
     "eslint": "*",
     "eslint-config-airbnb": "*",
     "eslint-plugin-import": "*"
   },
   "dependencies": {
-    "babel-runtime": "*",
     "debug": "*",
     "request": "*"
   }

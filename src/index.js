@@ -1,4 +1,4 @@
-import request from './request';
+const request = require('./request');
 
 const SDKS = ['bm', 'cdn', 'cdb', 'cvm', 'cbs', 'csec', 'dayu', 'lb', 'monitor', 'scaling', 'sqlserver', 'redis', 'cmem', 'trade', 'tdsql', 'vpc', 'wenzhi', 'yunsou'];
 
