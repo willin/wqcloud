@@ -231,7 +231,7 @@ API文档参考： <https://www.qcloud.com/document/api/236/1209>
 
 ### 云解析 CNS
 
-API文档参考： <https://www.qcloud.com/document/api/239/1749>
+API文档参考： <https://www.qcloud.com/document/api/302/4031>
 
 ### 数据库 TDSQL
 
