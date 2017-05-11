@@ -3,7 +3,6 @@
     "node": true,
     "es6": true
   },
-  "parser": "babel-eslint",
   "rules": {
     "quotes": [2, "single"],
     "semi": 2,
@@ -13,7 +12,8 @@
     "object-curly-spacing": 0,
     "no-console": 1,
     "no-param-reassign": [1, { "props": false }],
-    "consistent-return": 1
+    "consistent-return": 1,
+    "jsx-a11y/img-has-alt": 0
   },
-  "extends": "airbnb/base"
+  "extends": "airbnb"
 }

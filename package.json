@@ -1,6 +1,6 @@
 {
   "name": "wqcloud",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "description": "ALL QCloud APIs",
   "main": "src/index.js",
   "engines": {
@@ -34,7 +34,9 @@
   "devDependencies": {
     "eslint": "*",
     "eslint-config-airbnb": "*",
-    "eslint-plugin-import": "*"
+    "eslint-plugin-import": "*",
+    "eslint-plugin-jsx-a11y": "*",
+    "eslint-plugin-react": "*"
   },
   "dependencies": {
     "debug": "*",

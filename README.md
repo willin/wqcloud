@@ -2,7 +2,7 @@
 
 比官方SDK更好用的腾讯云SDK。
 
-> 已经疯狂得不能用代码行数来衡量该项目了，核心代码 `src/index.js` 除仅有 `714`（不含空格） 字节。
+> 已经疯狂得不能用代码行数（总计`82`行，包含空行）来衡量该项目了，代码 `src/index.js` 仅有 `1,711`字节（不含空格） 。
 
 [![npm](https://img.shields.io/npm/v/wqcloud.svg?style=plastic)](https://npmjs.org/package/wqcloud) [![npm](https://img.shields.io/npm/dm/wqcloud.svg?style=plastic)](https://npmjs.org/package/wqcloud)
 [![npm](https://img.shields.io/npm/dt/wqcloud.svg?style=plastic)](https://npmjs.org/package/wqcloud)
@@ -231,6 +231,12 @@ API文档参考： <https://www.qcloud.com/document/api/236/1209>
 
 ### 云解析 CNS
 
+即`DNSPOD`服务。
+
+> 不得不说，DNSPOD是我见过最烂的服务商，客服电话永远打不通。交钱的是大爷，想要霸占别人域名只需要购买VIP服务即可，域名主人就别再想用DNSPOD的免费服务了。呵呵哒~
+
+> 个人意见，强烈推荐参考。
+
 API文档参考： <https://www.qcloud.com/document/api/302/4031>
 
 ### 数据库 TDSQL
@@ -296,9 +302,15 @@ API文档参考： <https://www.qcloud.com/document/api/558/7758>
 
 ## CHANGELOG
 
+### v3.0.2
+
+2017-05-11
+
+更新了签名算法，进一步优化代码，将代码行数缩减到82行（含空行）。
+
 ### v2.0.2
 
-2018-01-06
+2017-01-06
 
 从 `waliyun` 阿里云SDK修改适配到 QCloud
 
