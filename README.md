@@ -2,7 +2,7 @@
 
 比官方SDK更好用的腾讯云SDK。
 
-> 已经疯狂得不能用代码行数（总计`82`行，包含空行）来衡量该项目了，代码 `src/index.js` 仅有 `1,711`字节（不含空格） 。
+> 已经疯狂得不能用代码行数（总计`82`行，包含空行）来衡量该项目了，代码仅有 `1,711`字节（压缩空行）。
 
 [![npm](https://img.shields.io/npm/v/wqcloud.svg?style=plastic)](https://npmjs.org/package/wqcloud) [![npm](https://img.shields.io/npm/dm/wqcloud.svg?style=plastic)](https://npmjs.org/package/wqcloud)
 [![npm](https://img.shields.io/npm/dt/wqcloud.svg?style=plastic)](https://npmjs.org/package/wqcloud)
@@ -38,6 +38,7 @@ Minimum, Flexible, Scalable.
   - [账号相关 TRADE](#%E8%B4%A6%E5%8F%B7%E7%9B%B8%E5%85%B3-trade)
   - [地域相关 CVM](#%E5%9C%B0%E5%9F%9F%E7%9B%B8%E5%85%B3-cvm)
 - [CHANGELOG](#changelog)
+  - [v3.0.2](#v302)
   - [v2.0.2](#v202)
   - [v2.0.0](#v200)
   - [v1.0.0](#v100)
