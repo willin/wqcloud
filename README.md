@@ -37,7 +37,11 @@ Minimum, Flexible, Scalable.
   - [文智自然语言处理 WENZHI](#%E6%96%87%E6%99%BA%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86-wenzhi)
   - [账号相关 TRADE](#%E8%B4%A6%E5%8F%B7%E7%9B%B8%E5%85%B3-trade)
   - [地域相关 CVM](#%E5%9C%B0%E5%9F%9F%E7%9B%B8%E5%85%B3-cvm)
+  - [点播 VOD](#%E7%82%B9%E6%92%AD-vod)
+  - [及其他未列出的服务](#%E5%8F%8A%E5%85%B6%E4%BB%96%E6%9C%AA%E5%88%97%E5%87%BA%E7%9A%84%E6%9C%8D%E5%8A%A1)
+  - [直播 LVB (wqcloud-video)](#%E7%9B%B4%E6%92%AD-lvb-wqcloud-video)
 - [CHANGELOG](#changelog)
+  - [v3.0.5](#v305)
   - [v3.0.2](#v302)
   - [v2.0.2](#v202)
   - [v2.0.0](#v200)
@@ -300,8 +304,25 @@ const trade = TRADE({
 
 API文档参考： <https://www.qcloud.com/document/api/558/7758>
 
+### 点播 VOD
+
+API文档参考： <https://www.qcloud.com/document/product/266/7788>
+
+### 及其他未列出的服务
+
+基本涵盖所有, 只要检查 API接口访问地址是否类似这样的格式 `https://${service}.api.qcloud.com/v2/index.php` 即可.
+
+### 直播 LVB (wqcloud-video)
+
+参考项目: <https://github.com/AirDwing/wqcloud-video>
 
 ## CHANGELOG
+
+### v3.0.5
+
+2017-06-21
+
+完善说明.
 
 ### v3.0.2
 
