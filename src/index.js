@@ -63,7 +63,6 @@ const DEFAULTS = {
 };
 
 const lazyLoad = service => (options) => {
-  /* eslint global-require:0 */
   const settings = {
     api: `https://${service}.api.qcloud.com/v2/index.php`
   };
@@ -71,7 +70,7 @@ const lazyLoad = service => (options) => {
     get: (target, property) =>
       (opts) => {
         let params = Object.assign({}, DEFAULTS, options);
-        params = Object.assign({Action: property}, params, opts);
+        params = Object.assign({ Action: property }, params, opts);
         return makeRequest(settings.api, params);
       }
   });
