@@ -87,7 +87,7 @@ trade.DescribeUserInfo().then(function(instances){
 ES7:
 
 ```js
-import {TRADE} from 'wqcloud';
+const {TRADE} = require('wqcloud');
 const trade = TRADE(options);
 // Within Async Func
 (async() => {
@@ -287,7 +287,7 @@ API文档参考： <https://www.qcloud.com/document/api/378/4367>
 获取账户余额示例：
 
 ```js
-import {TRADE} from 'wqcloud';
+const {TRADE} = require('wqcloud');
 // const TRADE = require('wqcloud').TRADE;
 
 const trade = TRADE({
