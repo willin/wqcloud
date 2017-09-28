@@ -2,7 +2,7 @@
 
 比官方SDK更好用的腾讯云SDK。
 
-> 已经疯狂得不能用代码行数（总计`81`行，包含空行和debug）来衡量该项目了，代码仅有 `1,709`字节（净化后）。
+> 已经疯狂得不能用代码行数（总计`66`行，包含空行和debug）来衡量该项目了，代码仅有 `1,489`字节（净化后）。
 
 [![npm](https://img.shields.io/npm/v/wqcloud.svg?style=plastic)](https://npmjs.org/package/wqcloud) [![npm](https://img.shields.io/npm/dm/wqcloud.svg?style=plastic)](https://npmjs.org/package/wqcloud)
 [![npm](https://img.shields.io/npm/dt/wqcloud.svg?style=plastic)](https://npmjs.org/package/wqcloud)
@@ -78,7 +78,7 @@ ES5:
 
 ```js
 var WQCLOUD = require('wqcloud');
-var trade = WALIYUN.TRADE(options);
+var trade = WQCLOUD.TRADE(options);
 trade.DescribeUserInfo().then(function(instances){
   // xxxx
 });

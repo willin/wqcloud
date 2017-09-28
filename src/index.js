@@ -1,12 +1,9 @@
 const debug = require('debug');
 const crypto = require('crypto');
 const request = require('request');
+const { promisify } = require('util');
 
-const getDefer = () => {
-  const deferred = {};
-  deferred.promise = new Promise((resolve, reject) => { deferred.resolve = resolve; deferred.reject = reject; });
-  return deferred;
-};
+const req = promisify(request);
 
 const getSignature = (params, secret, host) => {
   const canoQuery = Object.keys(params).sort()
@@ -25,11 +22,10 @@ const makeRequest = (host, params = {}, timeout = 5000) => {
   params.Nonce = parseInt(Math.random() * 999999, 10);
   params.Timestamp = parseInt(new Date() / 1000, 10);
   const signature = getSignature(params, secret, host);
-  const deferred = getDefer();
 
   params.Signature = signature;
   debug('wqcloud:common:params')(params);
-  request({
+  return req({
     method: 'POST',
     url: host,
     headers: [
@@ -40,18 +36,7 @@ const makeRequest = (host, params = {}, timeout = 5000) => {
     ],
     timeout: parseInt(timeout, 10),
     form: params
-  }, (err, res) => {
-    if (err) {
-      deferred.reject(err);
-    }
-    try {
-      deferred.resolve(JSON.parse(res.body));
-    } catch (e) {
-      deferred.reject(err);
-    }
-  });
-
-  return deferred.promise;
+  }).then(res => JSON.parse(res.body));
 };
 
 const DEFAULTS = {
