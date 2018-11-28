@@ -47,20 +47,20 @@ const DEFAULTS = {
   Timestamp: parseInt(new Date() / 1000, 10)
 };
 
-const lazyLoad = service => (options) => {
+const lazyLoad = service => (options, v2 = false) => {
   const settings = {
-    api: `https://${service}.api.qcloud.com/v2/index.php`
+    api: v2 ? `https://${service}.api.qcloud.com/v2/index.php` : `https://${service}.tencentcloudapi.com`
   };
   return new Proxy({}, {
-    get: (target, property) =>
-      (opts) => {
-        let params = Object.assign({}, DEFAULTS, options);
-        params = Object.assign({ Action: property }, params, opts);
-        return makeRequest(settings.api, params);
-      }
+    get: (target, property) => (opts) => {
+      let params = Object.assign({}, DEFAULTS, options);
+      params = Object.assign({ Action: property }, params, opts);
+      return makeRequest(settings.api, params);
+    }
   });
 };
 
 module.exports = new Proxy({}, {
-  get: (target, property) => lazyLoad(property.toLowerCase())
+  get: (target, property) => (property.toLowerCase() !== 'v2' ? lazyLoad(property.toLowerCase())
+    : new Proxy({}, { get: (_, p) => lazyLoad(p.toLowerCase(), true) }))
 });

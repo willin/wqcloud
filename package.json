@@ -1,6 +1,6 @@
 {
   "name": "wqcloud",
-  "version": "4.0.0",
+  "version": "5.0.0",
   "description": "ALL QCloud APIs",
   "main": "src/index.js",
   "engines": {
@@ -32,8 +32,10 @@
   },
   "homepage": "https://github.com/willin/wqcloud#readme",
   "devDependencies": {
-    "eslint": "^4.3.0",
-    "eslint-config-dwing": "^1.1.0"
+    "doctoc": "^1.4.0",
+    "eslint": "^5.9.0",
+    "eslint-config-dwing": "^1.2.1",
+    "eslint-plugin-import": "^2.14.0"
   },
   "dependencies": {
     "debug": "*",
