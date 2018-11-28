@@ -49,7 +49,7 @@ const DEFAULTS = {
 
 const lazyLoad = service => (options, v2 = false) => {
   const settings = {
-    api: v2 ? `https://${service}.api.qcloud.com/v2/index.php` : `https://${service}.tencentcloudapi.com`
+    api: v2 ? `https://${service}.api.qcloud.com/v2/index.php` : `https://${service}.tencentcloudapi.com/`
   };
   return new Proxy({}, {
     get: (target, property) => (opts) => {
