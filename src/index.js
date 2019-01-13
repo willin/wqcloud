@@ -47,7 +47,7 @@ const DEFAULTS = {
   Timestamp: parseInt(new Date() / 1000, 10)
 };
 
-const lazyLoad = service => (options, v2 = false) => {
+const lazyLoad = (service, v2 = false) => options => {
   const settings = {
     api: v2 ? `https://${service}.api.qcloud.com/v2/index.php` : `https://${service}.tencentcloudapi.com/`
   };
