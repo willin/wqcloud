@@ -1,6 +1,6 @@
 {
   "name": "wqcloud",
-  "version": "5.0.1",
+  "version": "5.0.2",
   "description": "ALL QCloud APIs",
   "main": "src/index.js",
   "engines": {
